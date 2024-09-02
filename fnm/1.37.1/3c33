@@ -1,0 +1,61 @@
+Author: Gal Schlezinger
+Documentations:
+- DocumentLabel: Configuration
+  DocumentUrl: https://github.com/Schniz/fnm/blob/master/docs/configuration.md
+- DocumentLabel: Commands
+  DocumentUrl: https://github.com/Schniz/fnm/blob/master/docs/commands.md
+InstallerType: zip
+Installers:
+- Architecture: x64
+  InstallerSha256: 44E964B4B408836CD24675FF85CE410D37D61A6A5DF61E9C661BFD911670704F
+  InstallerUrl: https://github.com/Schniz/fnm/releases/download/v1.37.1/fnm-windows.zip
+  NestedInstallerFiles:
+  - PortableCommandAlias: fnm
+    RelativeFilePath: fnm.exe
+  NestedInstallerType: portable
+License: GPL-3.0
+LicenseUrl: https://github.com/Schniz/fnm/blob/HEAD/LICENSE
+Localization:
+- Author: Gal Schlezinger
+  Documentations:
+  - DocumentLabel: "\u914D\u7F6E"
+    DocumentUrl: https://github.com/Schniz/fnm/blob/master/docs/configuration.md
+  - DocumentLabel: "\u547D\u4EE4"
+    DocumentUrl: https://github.com/Schniz/fnm/blob/master/docs/commands.md
+  License: GPL-3.0
+  LicenseUrl: https://github.com/Schniz/fnm/blob/HEAD/LICENSE
+  PackageLocale: zh-CN
+  PackageName: Fast Node Manager
+  PackageUrl: https://github.com/Schniz/fnm
+  Publisher: Schniz
+  PublisherSupportUrl: https://github.com/Schniz/fnm/issues
+  PublisherUrl: https://gal.hagever.com/
+  ReleaseNotesUrl: https://github.com/Schniz/fnm/releases/tag/v1.37.1
+  ShortDescription: "\u5FEB\u901F\u3001\u7B80\u5355\u7684 Node.js \u7248\u672C\u7BA1\u7406\u5668\uFF0C\u91C7\u7528
+    Rust \u6784\u5EFA"
+  Tags:
+  - node
+  - nodejs
+  - nvm
+ManifestType: merged
+ManifestVersion: 1.6.0
+Moniker: fnm
+PackageIdentifier: Schniz.fnm
+PackageLocale: en-US
+PackageName: Fast Node Manager
+PackageUrl: https://github.com/Schniz/fnm
+PackageVersion: 1.37.1
+Publisher: Schniz
+PublisherSupportUrl: https://github.com/Schniz/fnm/issues
+PublisherUrl: https://gal.hagever.com/
+ReleaseDate: 2024-06-13
+ReleaseNotes: 'Patch Changes
+
+  - #1164 318f86d Thanks @Schniz! - windows: fix shell inference in powershell when
+  using scoop''s shims'
+ReleaseNotesUrl: https://github.com/Schniz/fnm/releases/tag/v1.37.1
+ShortDescription: Fast and simple Node.js version manager, built in Rust
+Tags:
+- node
+- nodejs
+- nvm
