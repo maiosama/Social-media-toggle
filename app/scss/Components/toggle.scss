@@ -2,30 +2,23 @@
 
 .toggle{
     border: none;
-    display: grid;
+    // display: grid;
 
     &__wrapper{
-        position: relative;
+        // position: relative;
         height: rem(24);
-
     }
     input[type="radio"]{
-        // opacity: 0;
+        opacity: 0;
         
 
     }
     &__background{
         display: block;
         height: 100%;
-        background: linear-gradient(
-            225deg, 
-            var(--toggel-bg-start)0%,  
-            var(--toggle-bg-end)98.02%
-            );
-            border-radius: rem(9999);
-           
-
-
+        border-radius: rem(12);
+        overflow: hidden;
+        background: linear-gradient(225deg, var(--toggel-bg-start)0%,var(--toggle-bg-end)98.02%);
     }
     &__button{
         width:rem(16);
@@ -34,6 +27,7 @@
         background-color: var(--darkToggle);
     }
     label{
+      font-size: rem(24);
 
     }
 }
