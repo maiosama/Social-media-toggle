@@ -2,13 +2,21 @@
 
 .toggle{
     border: none;
-    // display: grid;
+    display: grid;
+    grid-template-columns: 1fr 3rem;
+    // grid-template-rows: 2fr 1fr 2rem;
+    gap: rem(12);
+    
 
     &__wrapper{
-        // position: relative;
+        position: relative;
+        display: grid;
+        grid-column: 2/3;
+        grid-row: 1/2;
         height: rem(24);
     }
     input[type="radio"]{
+      margin: 0;
         opacity: 0;
         
 
@@ -17,17 +25,53 @@
         display: block;
         height: 100%;
         border-radius: rem(12);
+        position: absolute;
+        width: 100%;
+        top: 0;
         overflow: hidden;
         background: linear-gradient(225deg, var(--toggel-bg-start)0%,var(--toggle-bg-end)98.02%);
+      
     }
     &__button{
-        width:rem(16);
-        height: rem(16);
+        position: absolute;
+        left: rem(3);
+        top: rem(3);
+        right: 100%;
+        width:rem(18);
+        height: rem(18);
         border-radius: 50%;
-        background-color: var(--darkToggle);
+        background-color: var(--dark-bg);
+
+        #light:checked{
+          right:0;
+          left:100%;
+        }
+    }
+    #light:checked .toggle__button{
+      left: calc(100%-21px);
+      right:3px;
     }
     label{
-      font-size: rem(24);
+        display:grid;
+        
+        // grid-template-columns: 5fr;
+        // grid-template-rows: 1fr;
+      &[for= "system"]{
+        grid-column: 1/4;
+        grid-row: 2/3;
+        justify-self: center;
+        
+      }
+      &[for= "dark"]{
+        grid-column: 1/2;
+        justify-self: end;
+        
+      }
+      &[for= "light"]{
+        grid-column: 3/4;
+        
+      }
+      
 
     }
 }
