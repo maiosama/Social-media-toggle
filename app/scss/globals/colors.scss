@@ -37,7 +37,7 @@
     --hover: var(--light-hover);
     --toggle-label: var(--light-toggle);
     --toggle-bg:var(--light-toggle-bg);
-    --toggle-btn: var(--light-toggle-btn)
+    --toggle-btn: var(--light-toggle-btn);
 }
 
 
@@ -49,9 +49,10 @@
         --main-text-color:var(--white-text);
         --card-bg:var(--dark-card);
         --hover:var(--dark-card-hover);
-        --toggle-label: var(var(--white-text))
+        --toggle-label: var(--white-text);
         --toggle-bg: linear-gradient(225deg, var(--toggel-bg-start)0%,var(--toggle-bg-end)98.02%);
         pointer-events: none;
+        --toggle-btn:var(--dark-bg);
         
         h2{
             color:var(--main-text-color);
