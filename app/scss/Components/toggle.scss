@@ -36,6 +36,7 @@
       height: rem(24);
       display: grid;
       grid-row: 2/3;
+      
       &:focus ~ .toggle__button {
         border: 2px solid white;
       }
@@ -47,11 +48,11 @@
     
     }
     
-    #dark:checked ~ .toggle__button {
-      right: calc(100% - 21px);
-      left: 13px;
-      transform: translate(-50%);
-    }
+    // #dark:checked ~ .toggle__button {
+    //   right: calc(100% - 21px);
+    //   left: 10px;
+    //   // trasnsform: translate(-50%);
+    // }
 
     &__background{
         display: block;

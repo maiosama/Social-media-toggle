@@ -51,7 +51,7 @@
         --hover:var(--dark-card-hover);
         --toggle-label: var(--white-text);
         --toggle-bg: linear-gradient(225deg, var(--toggel-bg-start)0%,var(--toggle-bg-end)98.02%);
-        pointer-events: none;
+        // pointer-events: none;
         --toggle-btn:var(--dark-bg);
 
         
@@ -63,7 +63,7 @@
     
 }
 
-body.lioght{
+body.light{
     --background: var(--light-bg);
     --main-text-color: var(--light-text1);
     --sub-text-color:var(--light-text);
@@ -76,15 +76,18 @@ body.lioght{
 
 body.dark{
     --background: var(--dark-bg);
-        --main-text-color:var(--white-text);
-        --card-bg:var(--dark-card);
-        --hover:var(--dark-card-hover);
-        --toggle-label: var(--white-text);
-        --toggle-bg: linear-gradient(225deg, var(--toggel-bg-start)0%,var(--toggle-bg-end)98.02%);
-        pointer-events: none;
-        --toggle-btn:var(--dark-bg);
-        
-        h2{
-            color:var(--main-text-color);
-        }
+    --text-color: var(--dark-text2);
+    --text-color2: var(--dark-text1);
+    --card-bg: var(--dark-card);
+    --card-hover: var(--dark-card-hover);
+    --toggle: var(--light-bg);
+    --toggle-bg: linear-gradient(
+      225deg,
+      var(--toggle-bg-end) 0%,
+      var(--toggle-bg-start) 98.02%
+    );
+    --toggle-button: var(--dark-bg);
+    h2{
+        color:var(--main-text-color);
+    }
 }
