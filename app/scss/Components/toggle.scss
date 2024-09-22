@@ -32,16 +32,27 @@
     input[type="radio"]{
       margin: 0 rem(-2) 0 rem(-2);
       opacity: 0;
-      width: rem(20);
-      height: rem(20);
+      width: rem(24);
+      height: rem(24);
       display: grid;
       grid-row: 2/3;
       &:focus ~ .toggle__button {
         border: 2px solid white;
       }
-        
-
     }
+    #light:checked ~ .toggle__button {
+      left: calc(100% - 21px);
+      right: 3px;
+      color:var(--toggle-bg);
+    
+    }
+    
+    #dark:checked ~ .toggle__button {
+      right: calc(100% - 21px);
+      left: 13px;
+      transform: translate(-50%);
+    }
+
     &__background{
         display: block;
         height: 100%;
@@ -51,6 +62,7 @@
         top: 0;
         overflow: hidden;
         background: var(--toggle-bg);
+        pointer-events: none;
         
       
     }
@@ -67,14 +79,4 @@
 
       }
 }
-#light:checked ~ .toggle__button {
-  left: calc(100% - 21px);
-  right: 3px;
-  color: var(--toggle-bg)
-}
 
-// #system:checked ~ .toggle__button {
-//   left: 50%;
-//   right: auto;
-//   transform: translate(-50%);
-// }
