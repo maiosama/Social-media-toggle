@@ -12,7 +12,7 @@
     --youtube: hsl(348, 97%, 39%);
     
     // Dark Theme
-    --toggel-bg-start: hsl(210, 78%, 56%);
+    --toggle-bg-start: hsl(210, 78%, 56%);
     --toggle-bg-end: hsl(146, 68%, 55%);
     --dark-bg: hsl(230, 17%, 14%);
     --dark-bg-top: hsl(232, 19%, 15%);
@@ -76,17 +76,18 @@ body.light{
 
 body.dark{
     --background: var(--dark-bg);
-    --text-color: var(--dark-text2);
-    --text-color2: var(--dark-text1);
+    --main-text-color: var(--white-text);
+    --sub-text-color: var(--dark-text);
     --card-bg: var(--dark-card);
-    --card-hover: var(--dark-card-hover);
+    --hover: var(--dark-card-hover);
     --toggle: var(--light-bg);
     --toggle-bg: linear-gradient(
       225deg,
       var(--toggle-bg-end) 0%,
       var(--toggle-bg-start) 98.02%
     );
-    --toggle-button: var(--dark-bg);
+    --toggle-btn: var(--dark-bg);
+    --toggle-label: var(--white-text)
     h2{
         color:var(--main-text-color);
     }
